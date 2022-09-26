@@ -4,7 +4,7 @@ import flask_socketio as fsio
 import json
 import redis
 
-import configuration as oc
+import omega_ui.configuration as oc
 
 eventlet.monkey_patch()
 pool = eventlet.GreenPool(1000)  # number of available connections

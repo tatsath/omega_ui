@@ -1,11 +1,11 @@
 default:
-  module: tests.test_backtest
+  module: test_backtest
   redis: 127.0.0.1
   class: ExampleBacktest
   
 logging:
-  root: 'C:\Temp\Logs'
+  root: 'Temp/Logs'
 
 backtest:
   cash: 100000.0
-  modules: tests.test_backtest
+  modules: test_backtest

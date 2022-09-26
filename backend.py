@@ -62,7 +62,7 @@ def test_list(module_name):
 
 
 def cash_param():
-    return [{'Parameter': 'Cash', 'Value': oc.cfg['backtest']['cash']}]
+    return [{'name': 'Cash', 'id': str(oc.cfg['backtest']['cash'])}]
 
 
 def params_list(module_name, strategy_name, symbol):
@@ -77,7 +77,7 @@ def params_list(module_name, strategy_name, symbol):
         for key, value in backtest.get_parameters(strategy, symbol).items():
             if isinstance(value, dict):
                 value = json.dumps(value)
-            params.append({'Parameter': key, 'Value': value})
+            params.append({'name': key, 'id': str(value)})
     except Exception as e:
         logger.log(logging.ERROR, 'Error in loading params: {}!'.format(str(e)))
     return params
@@ -121,12 +121,22 @@ def create_ts(uid, module_name, strategy_name, symbols, params):
     return result
 
 
-def extract_figure(json_ts, w, h):
+# def extract_figure(json_ts, w, h):
+#     try:
+#         ts = json.loads(json_ts)
+#         df_r = pd.read_json(ts['returns'], typ='series').rename('return')
+#         fig = ots.create_figure(df_r, ts['title'])
+#         fig['layout'].update(autosize=True, width=w, height=h)
+
+#         return fig
+#     except:
+#         return []
+def extract_figure(json_ts):
     try:
         ts = json.loads(json_ts)
         df_r = pd.read_json(ts['returns'], typ='series').rename('return')
         fig = ots.create_figure(df_r, ts['title'])
-        fig['layout'].update(autosize=True, width=w, height=h)
+        fig['layout'].update(autosize=True)
 
         return fig
     except:
