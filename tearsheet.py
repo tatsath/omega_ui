@@ -1,5 +1,6 @@
 import plotly.graph_objs as go
-import plotly.tools as pto
+#import plotly.tools as pto
+import plotly.subplots as pto 
 import numpy as np
 import empyrical as ep
 import pandas as pd
@@ -66,27 +67,27 @@ def create_figure(returns, title):
 
     months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
-    hover = pivot_for_hm.values.astype(str)
-    for x in range(len(pivot_for_hm.index)):
-        for y in range(len(months)):
-            hover[x][y] = '{} {}: {:,.2f}'.format(pivot_for_hm.index[x], months[y], pivot_for_hm.values[x][y])
+    # hover = pivot_for_hm.values.astype(str)
+    # for x in range(len(pivot_for_hm.index)):
+    #     for y in range(len(months)):
+    #         hover[x][y] = '{} {}: {:,.2f}'.format(pivot_for_hm.index[x], months[y], pivot_for_hm.values[x][y])
 
-    heat_map = go.Heatmap(
-        z=pivot_for_hm.values.tolist(),
-        colorscale=custom_color_scale,
-        showscale=False,
-        x=months,
-        y=pivot_for_hm.index,
-        text=hover,
-        hoverinfo='text',
-        name=''
-    )
+    # heat_map = go.Heatmap(
+    #     z=pivot_for_hm.values.tolist(),
+    #     colorscale=custom_color_scale,
+    #     showscale=False,
+    #     x=months,
+    #     y=pivot_for_hm.index,
+    #     text=hover,
+    #     hoverinfo='text',
+    #     name=''
+    # )
 
     annotations = []
     for n, row in enumerate(pivot_for_hm.values.tolist()):
         for m, val in enumerate(row):
             annotations.append(
-                go.Annotation(
+                go.layout.Annotation(
                     text='%0.1f' % pivot_for_hm.values.tolist()[n][m],
                     x=pivot_for_hm.columns[m] - 1,
                     y=pivot_for_hm.index[n],
@@ -123,7 +124,7 @@ def create_figure(returns, title):
     # place graphs
     fig.append_trace(drawdown, 1, 1)
     fig.append_trace(uw, 2, 1)
-    fig.append_trace(heat_map, 3, 1)
+    #fig.append_trace(heat_map, 3, 1)
     fig.append_trace(revenue_by_year, 3, 4)
 
     fig['layout'].update(
@@ -142,7 +143,7 @@ def create_figure(returns, title):
     fig['layout']['yaxis3']['dtick'] = 1  # show all ticks
     fig['layout']['xaxis4']['dtick'] = 1  # show all ticks
     fig['layout']['xaxis4']['tickangle'] = -45  # rotate ticks
-    fig['layout']['annotations'].extend(annotations)
+    #fig['layout']['annotations'].extend(annotations)
     fig['layout']['margin']['l'] = 40
     fig['layout']['margin']['r'] = 20
     fig['layout']['margin']['t'] = 40

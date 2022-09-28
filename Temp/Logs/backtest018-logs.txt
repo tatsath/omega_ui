@@ -365,3 +365,147 @@ DEBUG - 2018-01-08 - Close price: 22.42733383178711
 INFO - 2018-01-08 - Sell @ 22.42733383178711
 DEBUG - 2018-01-09 - Close price: 22.246000289916992
 DEBUG - done
+DEBUG - start
+DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/TSLA?period1=1514782800&period2=1515560400&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1511
+INFO - 2018-01-09 - Strategy Initialized!
+INFO - 2018-01-09 - Param1: 10 - Param2: 20
+DEBUG - 2018-01-02 - Close price: 21.368667602539062
+INFO - 2018-01-02 - Buy @ 21.368667602539062
+DEBUG - 2018-01-03 - Close price: 21.149999618530273
+INFO - 2018-01-03 - Buy @ 21.149999618530273
+DEBUG - 2018-01-04 - Close price: 20.974666595458984
+INFO - 2018-01-04 - Buy @ 20.974666595458984
+DEBUG - 2018-01-05 - Close price: 21.10533332824707
+DEBUG - 2018-01-08 - Close price: 22.42733383178711
+INFO - 2018-01-08 - Sell @ 22.42733383178711
+DEBUG - 2018-01-09 - Close price: 22.246000289916992
+DEBUG - done
+DEBUG - start
+DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/TSLA?period1=1514782800&period2=1515560400&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1511
+INFO - 2018-01-09 - Strategy Initialized!
+INFO - 2018-01-09 - Param1: 10 - Param2: 20
+DEBUG - 2018-01-02 - Close price: 21.368667602539062
+INFO - 2018-01-02 - Buy @ 21.368667602539062
+DEBUG - 2018-01-03 - Close price: 21.149999618530273
+INFO - 2018-01-03 - Buy @ 21.149999618530273
+DEBUG - 2018-01-04 - Close price: 20.974666595458984
+INFO - 2018-01-04 - Buy @ 20.974666595458984
+DEBUG - 2018-01-05 - Close price: 21.10533332824707
+DEBUG - 2018-01-08 - Close price: 22.42733383178711
+INFO - 2018-01-08 - Sell @ 22.42733383178711
+DEBUG - 2018-01-09 - Close price: 22.246000289916992
+DEBUG - done
+DEBUG - start
+DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/TSLA?period1=1514782800&period2=1515560400&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1512
+INFO - 2018-01-09 - Strategy Initialized!
+INFO - 2018-01-09 - Param1: 10 - Param2: 20
+DEBUG - 2018-01-02 - Close price: 21.368667602539062
+INFO - 2018-01-02 - Buy @ 21.368667602539062
+DEBUG - 2018-01-03 - Close price: 21.149999618530273
+INFO - 2018-01-03 - Buy @ 21.149999618530273
+DEBUG - 2018-01-04 - Close price: 20.974666595458984
+INFO - 2018-01-04 - Buy @ 20.974666595458984
+DEBUG - 2018-01-05 - Close price: 21.10533332824707
+DEBUG - 2018-01-08 - Close price: 22.42733383178711
+INFO - 2018-01-08 - Sell @ 22.42733383178711
+DEBUG - 2018-01-09 - Close price: 22.246000289916992
+DEBUG - done
+DEBUG - start
+DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/TSLA?period1=1514782800&period2=1515560400&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1511
+INFO - 2018-01-09 - Strategy Initialized!
+INFO - 2018-01-09 - Param1: 10 - Param2: 20
+DEBUG - 2018-01-02 - Close price: 21.368667602539062
+INFO - 2018-01-02 - Buy @ 21.368667602539062
+DEBUG - 2018-01-03 - Close price: 21.149999618530273
+INFO - 2018-01-03 - Buy @ 21.149999618530273
+DEBUG - 2018-01-04 - Close price: 20.974666595458984
+INFO - 2018-01-04 - Buy @ 20.974666595458984
+DEBUG - 2018-01-05 - Close price: 21.10533332824707
+DEBUG - 2018-01-08 - Close price: 22.42733383178711
+INFO - 2018-01-08 - Sell @ 22.42733383178711
+DEBUG - 2018-01-09 - Close price: 22.246000289916992
+DEBUG - done
+DEBUG - start
+DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/TSLA?period1=1514782800&period2=1515560400&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1511
+INFO - 2018-01-09 - Strategy Initialized!
+INFO - 2018-01-09 - Param1: 10 - Param2: 20
+DEBUG - 2018-01-02 - Close price: 21.368667602539062
+INFO - 2018-01-02 - Buy @ 21.368667602539062
+DEBUG - 2018-01-03 - Close price: 21.149999618530273
+INFO - 2018-01-03 - Buy @ 21.149999618530273
+DEBUG - 2018-01-04 - Close price: 20.974666595458984
+INFO - 2018-01-04 - Buy @ 20.974666595458984
+DEBUG - 2018-01-05 - Close price: 21.10533332824707
+DEBUG - 2018-01-08 - Close price: 22.42733383178711
+INFO - 2018-01-08 - Sell @ 22.42733383178711
+DEBUG - 2018-01-09 - Close price: 22.246000289916992
+DEBUG - done
+DEBUG - start
+DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/TSLA?period1=1514782800&period2=1515560400&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1511
+INFO - 2018-01-09 - Strategy Initialized!
+INFO - 2018-01-09 - Param1: 10 - Param2: 20
+DEBUG - 2018-01-02 - Close price: 21.368667602539062
+INFO - 2018-01-02 - Buy @ 21.368667602539062
+DEBUG - 2018-01-03 - Close price: 21.149999618530273
+INFO - 2018-01-03 - Buy @ 21.149999618530273
+DEBUG - 2018-01-04 - Close price: 20.974666595458984
+INFO - 2018-01-04 - Buy @ 20.974666595458984
+DEBUG - 2018-01-05 - Close price: 21.10533332824707
+DEBUG - 2018-01-08 - Close price: 22.42733383178711
+INFO - 2018-01-08 - Sell @ 22.42733383178711
+DEBUG - 2018-01-09 - Close price: 22.246000289916992
+DEBUG - done
+DEBUG - start
+DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/TSLA?period1=1514782800&period2=1515560400&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1511
+INFO - 2018-01-09 - Strategy Initialized!
+INFO - 2018-01-09 - Param1: 10 - Param2: 20
+DEBUG - 2018-01-02 - Close price: 21.368667602539062
+INFO - 2018-01-02 - Buy @ 21.368667602539062
+DEBUG - 2018-01-03 - Close price: 21.149999618530273
+INFO - 2018-01-03 - Buy @ 21.149999618530273
+DEBUG - 2018-01-04 - Close price: 20.974666595458984
+INFO - 2018-01-04 - Buy @ 20.974666595458984
+DEBUG - 2018-01-05 - Close price: 21.10533332824707
+DEBUG - 2018-01-08 - Close price: 22.42733383178711
+INFO - 2018-01-08 - Sell @ 22.42733383178711
+DEBUG - 2018-01-09 - Close price: 22.246000289916992
+DEBUG - done
+DEBUG - start
+DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/TSLA?period1=1514782800&period2=1515560400&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1511
+INFO - 2018-01-09 - Strategy Initialized!
+INFO - 2018-01-09 - Param1: 10 - Param2: 20
+DEBUG - 2018-01-02 - Close price: 21.368667602539062
+INFO - 2018-01-02 - Buy @ 21.368667602539062
+DEBUG - 2018-01-03 - Close price: 21.149999618530273
+INFO - 2018-01-03 - Buy @ 21.149999618530273
+DEBUG - 2018-01-04 - Close price: 20.974666595458984
+INFO - 2018-01-04 - Buy @ 20.974666595458984
+DEBUG - 2018-01-05 - Close price: 21.10533332824707
+DEBUG - 2018-01-08 - Close price: 22.42733383178711
+INFO - 2018-01-08 - Sell @ 22.42733383178711
+DEBUG - 2018-01-09 - Close price: 22.246000289916992
+DEBUG - done
+DEBUG - start
+DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+DEBUG - https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/TSLA?period1=1514782800&period2=1515560400&interval=1d&includePrePost=False&events=div%2Csplits HTTP/1.1" 200 1511
+INFO - 2018-01-09 - Strategy Initialized!
+INFO - 2018-01-09 - Param1: 10 - Param2: 20
+DEBUG - 2018-01-02 - Close price: 21.368667602539062
+INFO - 2018-01-02 - Buy @ 21.368667602539062
+DEBUG - 2018-01-03 - Close price: 21.149999618530273
+INFO - 2018-01-03 - Buy @ 21.149999618530273
+DEBUG - 2018-01-04 - Close price: 20.974666595458984
+INFO - 2018-01-04 - Buy @ 20.974666595458984
+DEBUG - 2018-01-05 - Close price: 21.10533332824707
+DEBUG - 2018-01-08 - Close price: 22.42733383178711
+INFO - 2018-01-08 - Sell @ 22.42733383178711
+DEBUG - 2018-01-09 - Close price: 22.246000289916992
+DEBUG - done
