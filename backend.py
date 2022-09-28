@@ -9,8 +9,8 @@ import re
 import rlog
 import sys
 
-import configuration as oc
-import tearsheet as ots
+import omega_ui.configuration as oc
+import omega_ui.tearsheet as ots
 from importlib.machinery import SourceFileLoader
 
 
@@ -21,8 +21,8 @@ if not os.path.exists(log_dir):
 
 
 # Backtest class
-#btm = importlib.import_module(oc.cfg['default']['module'])
-btm = importlib.import_module('test_backtest')
+btm = importlib.import_module(oc.cfg['default']['module'])
+#btm = importlib.import_module('test_backtest')
 
 backtest = getattr(btm, oc.cfg['default']['class'])()
 

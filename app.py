@@ -12,12 +12,12 @@ from dash import dcc, html, dash_table
 # from dash import html
 import dash.dash_table as dtb
 
-import configuration as oc
-import backend as ob
+import omega_ui.configuration as oc
+import omega_ui.backend as ob
 from dash.exceptions import PreventUpdate
 
 
-debug_mode = True  # set False to deploy
+debug_mode = False  # set False to deploy
 
 root_directory = os.getcwd()
 stylesheets = ['stylesheet.css']
@@ -25,7 +25,9 @@ jss = ['script.js']
 static_route = '/static/'
 
 
-app = dash.Dash(__name__)
+app = dash.Dash(__name__, external_stylesheets=['static/stylesheet.css'])
+
+#app = dash.Dash(__name__)
 server = app.server
 app.title = 'Omega - Backtest'
 #app.scripts.config.serve_locally = False
@@ -33,7 +35,7 @@ app.title = 'Omega - Backtest'
 # level_marks = ['Debug', 'Info', 'Warning', 'Error']
 level_marks = {0: 'Debug', 1: 'Info', 2: 'Warning', 3: 'Error'}
 num_marks = 4
-
+ 
 
 left_column = html.Div([
     html.Div([
@@ -57,7 +59,7 @@ left_column = html.Div([
     ], className='row mb-10'),
     html.Div(
         dash_table.DataTable(
-            # active_cell=ob.cash_param(),
+            row_selectable=ob.cash_param(),
             # optional - sets the order of columns
             columns=[{"name": i, "id": i} for i in['Parameter', 'Value']],
             editable=True,
@@ -161,7 +163,6 @@ def serve_file(file):
     static_directory = os.path.join(root_directory, 'static')
     return flask.send_from_directory(static_directory, file)
 
-
 @app.callback(dd.Output('strategy', 'options'), [dd.Input('module', 'value')])
 def update_strategy_list(module_name):
     data = ob.test_list(module_name)
@@ -229,6 +230,7 @@ def on_click_backtest_to_intermediate(json_packed, uid):
         strategy = unpacked['strategy_i']
         symbols = unpacked['symbols_i']
         params = unpacked['table_params']
+        #params = {}
         if module is None or strategy is None or symbols is None:
             return []
         return ob.create_ts(uid, module, strategy, symbols, params)

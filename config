@@ -1,5 +1,5 @@
 default:
-  module: test_backtest
+  module: omega_ui.test_backtest
   redis: 127.0.0.1
   class: ExampleBacktest
   
@@ -8,4 +8,4 @@ logging:
 
 backtest:
   cash: 100000.0
-  modules: test_backtest
+  modules: omega_ui.test_backtest
